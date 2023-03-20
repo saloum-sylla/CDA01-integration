@@ -1,0 +1,59 @@
+<!--
+	La modification dynamique du style consiste à modifier le CSS d'un élément quand l'utilisateur effectue sur celui-ci une action.
+	Ainsi, on peut agir au survol de l'élément de la façon suivante
+	h1:hover{
+		color: red;
+	}
+	Au survol du h1, le texte de ce h1 devient rouge.
+	On appelle :hover une pseudo-classe.
+-->
+
+<!--
+	1 - Créez un document contenant trois paragraphes de 500 caractères minimum chaque.
+	2 - Au survol du premier, la couleur du fond de ce paragraphe change.
+	3 - Au survol du second, une bordure apparait sur celui-ci.
+	4 - Au survol du troisième, ce dernier a une largeur de 50% de la fenêtre et une hauteur de 50px. Attention, le reste du texte doit être masqué !
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercice46</title>
+    <style>
+      .paragraphe1:hover {
+        background-color: aqua;
+      }
+      .paragraphe2:hover {
+        border: 3px solid aqua;
+      }
+      .paragraphe3:hover {
+        width: 50%;
+        height: 50px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>exercice46</h1>
+    <p class="paragraphe1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum dolorem
+      quisquam debitis impedit soluta, voluptates tenetur porro, odio
+      repellendus minima nulla. Tempore rem dignissimos similique deleniti.
+      Molestiae sed perferendis id.
+    </p>
+    <p class="paragraphe2">
+      Molestiae dignissimos veritatis quis dicta quae officiis aperiam repellat
+      voluptate voluptatibus. Accusantium magnam deserunt repudiandae fugit,
+      recusandae, nihil dignissimos non reprehenderit quaerat quo soluta
+      accusamus voluptatem veniam suscipit? Accusamus, ducimus?
+    </p>
+    <p class="paragraphe3">
+      Placeat blanditiis officiis molestias? Vel corporis, totam ipsam non
+      libero, ad officiis voluptatum laboriosam facere saepe eius iure. Veniam
+      omnis tenetur eum aliquid impedit quae id quidem obcaecati ratione
+      aliquam.
+    </p>
+  </body>
+</html>

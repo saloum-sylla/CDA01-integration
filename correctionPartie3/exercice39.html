@@ -1,0 +1,83 @@
+<!--
+	L'élément textarea permet d'intégrer un champ de saisie à plusieurs lignes dans un formulaire.
+	L'élément select représente un menu avec des options.
+	Deux type d'input permettent de créer une liste de choix :
+	_ checkbox : cases à cocher
+	_ radio: boutons radio
+-->
+
+<!--
+	1 - Reprenez le formulaire de l'exercice précédent.
+	2 - Ajoutez les champs suivants (avec les labels):
+		_ titre (sélection : M, Mme, Mlle).
+		_ type de téléphone (sélection : fixe, mobile).
+		_ commentaire (texte long à saisir).
+		_ centres d'intérêts (choix multiple possible).
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>exercice39</title>
+	<style></style>
+</head>
+<body>
+	<h1>exercice39</h1>
+	<form >
+		<label for="titre">Titre</label>
+		<select id="titre">
+			<option value="M">M.</option>
+			<option value="Mme">Mme</option>
+			<option value="autre" selected>autre</option>
+		</select><br>
+
+		<label for="telephone-type">Type de téléphone</label>
+		<select id="telephone-type">
+			<option value="fixe">Fixe</option>
+			<option value="mobile">Mobile</option>
+		</select><br>
+
+		<label for="commentaire">Commentaire</label>
+		<textarea id="commentaire" rows="4" cols="50"></textarea><br>
+
+		<label>Centres d'intérêts</label><br>
+		<input type="checkbox" id="sport" name="interest" value="sport">
+		<label for="sport">Sport</label><br>
+		<input type="checkbox" id="cinema" name="interest" value="cinema">
+		<label for="cinema">Cinéma</label><br>
+		<input type="checkbox" id="musique" name="interest" value="musique">
+		<label for="musique">Musique</label><br>
+
+		<label for="prenom" >Prénom</label>
+		<input type="text" id="prenom" /><br>
+
+		<label for="nom" >Nom</label>
+		<input type="text" id="nom" /><br>
+
+		<label for="voie" >Voie</label>
+		<input type="text" id="voie" /><br>
+
+		<label for="CP" >Code Postal</label>
+		<input type="text" id="CP" /><br>
+
+		<label for="ville">Ville</label>
+		<input type="text" id="ville" /><br>
+
+		<label for="telephone" >Téléphone</label>
+		<input type="tel" id="telephone" /><br>
+
+		<label for="email" >Email</label>
+		<input type="email" id="email" /><br>
+
+		<label for="naissance" >Date de naissance</label>
+		<input type="date" id="naissance" /><br>
+
+		<label for="site-web" >Site web</label>
+		<input type="url" id="site-web" /><br>
+
+		<input type="submit" value="Confirmer" />
+	</form>
+</body>
+</html>

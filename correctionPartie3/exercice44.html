@@ -1,0 +1,68 @@
+<!--
+	On peut spécifier différentes zones dans le tableau au moyen des balises thead, tbody et tfoot.
+	Dans l'ordre de déclaration, on débute par le thead, puis le tfoot et enfin le tbody.
+-->
+
+<!--
+	1 - Reprenez le tableau de l'exercice précédent
+	2 - Mettez la première ligne en gras au moyen de la balise thead.
+	3 - Répétez les informations de la première ligne dans une autre ligne située à la base du tableau. Mettez également cette ligne en gras.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>exercice44</title>
+	<style>
+		table {
+			border: 0.2rem solid black;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			border: 1px dashed black;
+			padding: 0.5rem;
+		}
+		/* thead {
+			background-color: #333;
+			color: white;
+		}  */
+	</style>
+</head>
+<body>
+	<h1>exercice44</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Ville</th>
+				<th>Département</th>
+				<th>Région</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>Paris</td>
+			<td>75</td>
+			<td>Île-de-France</td>
+		</tr>
+		<tr>
+			<td>Lyon</td>
+			<td>69</td>
+			<td>Auvergne-Rhône-Alpes</td>
+		</tr>
+		<tr>
+			<td>Marseille</td>
+			<td>13</td>
+			<td>Provence-Alpes-Côte d'Azur</td>
+		</tr>
+		<tfoot>
+			<tr>
+				<th>Ville</th>
+				<th>Département</th>
+				<th>Région</th>
+			</tr>
+		</tfoot>
+	</table>	
+</body>
+</html>

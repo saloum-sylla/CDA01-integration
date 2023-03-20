@@ -1,0 +1,48 @@
+<!--
+	En CSS, on peut masquer un bloc en utilisant la propriété display:none.
+	.masquer{
+		display: none;
+	}
+	Pour afficher ce même élément, on utilise display:block.
+-->
+
+<!--
+	1 - Créez un document avec deux paragraphes contenant chacun du texte et une image.
+	2 - Les images ne sont pas visibles.
+	3 - Au survol d'un paragraphe, l'image correspondante apparait.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercice47</title>
+    <style>
+      img {
+        width: 500px;
+      }
+      img:hover {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>exercice47</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum,
+      facilis debitis eligendi reprehenderit vero rerum repellat velit tempora,
+      temporibus nam rem eum totam odio, veritatis illum quo est incidunt
+      necessitatibus?
+    </p>
+    <img src="paysage.jpg" alt="" />
+    <p>
+      Sapiente sunt omnis aliquid suscipit atque libero tempore optio, quaerat
+      quasi, quia, velit illum consequatur exercitationem aperiam quis assumenda
+      fugit veritatis quos eos perspiciatis architecto eligendi! A laudantium
+      veniam corporis.
+    </p>
+    <img src="exercice35.jpg" alt="" />
+  </body>
+</html>
