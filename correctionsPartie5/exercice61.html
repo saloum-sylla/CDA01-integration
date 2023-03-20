@@ -1,0 +1,39 @@
+<!--
+  La pseudo-classe CSS :focus permet de donner une/des propriété(s) spécifique(s) à l'élément sélectionné par l'utilisateur au moyen du clavier ou bien survolé par la souris pour un lien ou cliqué par la souris pour un champ texte. 
+-->
+
+<!--
+	Créez une page contenant un formulaire comprenant deux champs.
+  Donner un style différent à chacun de ces champs lorsque l'un de ces champ est sélectionné, survolé ou cliqué.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercice61</title>
+    <style>
+      #nom:focus {
+        border: 5px solid blue;
+      }
+      #motdepasse:hover {
+        background-color: rgb(199, 42, 42);
+      }
+
+      #motdepasse:active {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>exercice61</h1>
+    <form>
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom"><br><br>
+
+      <label for="motdepasse">Mot de passe:</label>
+      <input type="password" id="motdepasse" name="motdepasse"><br><br>
+
+      <input type="submit" value="Envoyer">
+    </form>
+  </body>
+</html>

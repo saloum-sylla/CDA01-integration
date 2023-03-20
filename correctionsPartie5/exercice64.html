@@ -1,0 +1,52 @@
+<!--
+	La pseudo classe nth-child permet d'aller encore plus loin dans la sélection d'enfant (https://developer.mozilla.org/fr/docs/Web/CSS/%3Anth-child).
+-->
+
+<!--
+	Reprenez l'exemple de l'exercice 53 (partie 4) pour appliquer une couleur de fond différente entre les éléments pairs et les élément impairs du menu.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercice64</title>
+    <style>
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li:nth-child(even) {
+        background-color: lightgray;
+      }
+
+      li:nth-child(odd) {
+        background-color: white;
+      }
+
+      li {
+        border-bottom: 1px solid gray;
+        padding: 10px;
+      }
+
+      li:first-child {
+        border-top: none;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+	<h1>exercice64</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

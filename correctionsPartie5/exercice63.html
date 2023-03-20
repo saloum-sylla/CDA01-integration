@@ -1,0 +1,45 @@
+<!--
+	Il peut être utile de viser uniquement un enfant d'un élément parent.
+  :first-child permet de viser le premier enfant et :last-child le dernier.
+-->
+
+<!--
+	Créez une page avec un menu s'affichant verticalement. Mettez une barre de séparation entre chaque entrée au moyen d'une bordure sur chaque élément. Suivant votre choix, bordure en haut ou en bas de chaque élément, supprimez la bordure du premier ou du dernier élément pour que la bordure soit présent uniquement entre chaque élément.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercice63</title>
+    <style>
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        border-bottom: 1px solid gray;
+        padding: 10px;
+      }
+
+      li:first-child {
+        border-top: none;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+	<h1>exercice63</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
